@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import { CREATE_MESSAGE } from './types';
+import { CREATE_MESSAGE, GET_ERRORS } from './types';
 
 // Create Message
 const createMessage = msg => {
@@ -8,4 +8,13 @@ const createMessage = msg => {
     payload: msg
   };
 };
-export { createMessage };
+
+// Return Errors
+const returnErrors = (msg, status) => {
+  return {
+    type: GET_ERRORS,
+    payload: { msg, status }
+  };
+};
+
+export { createMessage, returnErrors };
