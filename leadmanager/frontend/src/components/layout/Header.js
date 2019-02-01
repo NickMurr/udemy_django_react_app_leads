@@ -1,6 +1,9 @@
+/* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 
 export class Header extends Component {
+  state = {};
+
   render() {
     return (
       <nav className="navbar navbar-expand-sm navbar-light bg-light">
